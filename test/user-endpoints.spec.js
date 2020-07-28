@@ -179,8 +179,8 @@ describe('User Endpoints', function () {
             { original: 'hola', translation: 'hello' },
             { original: 'casa', translation: 'house' },
             { original: 'cabeza', translation: 'head' },
-            { original: 'fácil', translation: 'easy' },
-            { original: '¿Cómo estás?', translation: 'How are you?' },
+            { original: 'seguir', translation: 'continue' },
+            { original: 'bailar', translation: 'to dance' },
             { original: 'perro', translation: 'dog' },
             { original: 'gato', translation: 'cat' }
           ]

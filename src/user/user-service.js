@@ -62,8 +62,8 @@ const UserService = {
         ['hola', 'hello', 3],
         ['casa', 'house', 4],
         ['cabeza', 'head', 5],
-        ['fácil', 'easy', 6],
-        ['¿Cómo estás?', 'How are you?', 7],
+        ['seguir', 'continue', 6],
+        ['bailar', 'to dance', 7],
         ['perro', 'dog', 8],
         ['gato', 'cat', null]
       ]

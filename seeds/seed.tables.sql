@@ -28,8 +28,8 @@ BEGIN;
     (2, 1, 'hola', 'hello', 3),
     (3, 1, 'casa', 'house', 4),
     (4, 1, 'cabeza', 'head', 5),
-    (5, 1, 'fácil', 'easy', 6),
-    (6, 1, '¿Cómo estás?', 'How are you?', 7),
+    (5, 1, 'seguir', 'continue', 6),
+    (6, 1, 'bailar', 'to dance', 7),
     (7, 1, 'perro', 'dog', 8),
     (8, 1, 'gato', 'cat', null);
 
