@@ -58,7 +58,7 @@ const UserService = {
         .first()
 
       const languageWords = [
-        ['Tengo hambre', `Im hungry`, 2],
+        ['Tengo hambre', `I'm hungry`, 2],
         ['hola', 'hello', 3],
         ['casa', 'house', 4],
         ['cabeza', 'head', 5],

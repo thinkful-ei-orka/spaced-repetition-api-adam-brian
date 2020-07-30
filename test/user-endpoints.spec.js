@@ -175,7 +175,7 @@ describe('User Endpoints', function () {
           name: 'Spanish',
           total_score: 0,
           words: [
-            { original: 'Tengo hambre', translation: `Im hungry` },
+            { original: 'Tengo hambre', translation: `I'm hungry` },
             { original: 'hola', translation: 'hello' },
             { original: 'casa', translation: 'house' },
             { original: 'cabeza', translation: 'head' },
