@@ -48,16 +48,15 @@ languageRouter
 languageRouter
   .get('/head', async (req, res, next) => {
     try {
-      const words = await LanguageService.getLanguageWords(
+      const head = await LanguageService.getWord(
         req.app.get('db'),
-        req.language.id,
-      );
-
+        req.language.head
+      )
       res.json({
-        nextWord: words[req.language.head - 1].original,
+        nextWord: head.original,
         totalScore: req.language.total_score,
-        wordCorrectCount: words[req.language.head - 1].correct_count,
-        wordIncorrectCount: words[req.language.head - 1].incorrect_count
+        wordCorrectCount: head.correct_count,
+        wordIncorrectCount: head.incorrect_count
       });
       next();
     } catch (error) {
@@ -81,7 +80,6 @@ languageRouter
           req.language.head
         );
         const guess = req.body.guess;
-        // console.log(req.language)
         if (guess.toLowerCase().trim() === word.translation.toLowerCase()) {
           await LanguageService.correctUpdate(
             req.app.get('db'),

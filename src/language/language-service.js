@@ -67,8 +67,8 @@ const LanguageService = {
     await this.updateLanguage(db, word.next, language, 1);
     const newMemory = word.memory_value * 2;
     let nextWord = await this.getWord(db, word.id + newMemory);
-    if (nextWord.id > Math.max(...wordList.map(word => word.id !== null ? word.id : 0))) {
-      nextWord = this.getWord(db, wordList.find(word => word.next === null).id);
+    if (!nextWord || nextWord.id > Math.max(...wordList.map(word => word.id !== null))) {
+      nextWord = await this.getWord(db, wordList.find(word => word.next === null).id);
     }
     await this.updateNext(db, nextWord, word);
     return db
